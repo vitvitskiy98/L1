@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 17</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="task-block">
+        <p class="task-description">Необходимо реализовать простое поле ввода адреса с функцией геокодинга: пользователь
+            вводит данные в поле с помощью одного из геоинформационных сервисов (Яндекс.Карты, ДаДата, GraphHopper),
+            подбирается адрес. Найденные данные должны отображаться в выпадающем списке, из которого можно выбрать
+            подходящее значение.</p>
+        <div class="input-block">
+            <input type="text" class="input">
+            <button class="result-btn">click</button>
+        </div>
+        <div class="result-block">
+            <p class="result-paragraph"></p>
+        </div>
+    </div>
+    <script 
+        src="https://api-maps.yandex.ru/2.1/?apikey=34071935-9aaf-4126-912b-13ebd6e9a495&lang=ru_RU"
+        type="text/javascript">
+    </script>
+    <script src="./address-task.js"></script>
+</body>
+
+</html>

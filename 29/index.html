@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 29</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="task-block">
+        <p class="task-description">Задача: Взаимодействие с формами: Напишите функцию, которая получает данные из формы
+            на веб-странице и выполняет определенные действия с этими данными, например, отправляет их на сервер или
+            отображает всплывающее окно с результатами.
+        </p>
+        <div class="result-block">
+            <form id="myForm">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+
+                <button type="submit">Отправить</button>
+            </form>
+
+            <div id="popup">
+                <h2>Результаты:</h2>
+                <p id="result"></p>
+                <button id="closePopup">Закрыть</button>
+            </div>
+            <p class="result-paragraph"></p>
+        </div>
+    </div>
+
+    <script src="./form-task.js"></script>
+</body>
+
+</html>

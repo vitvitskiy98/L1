@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 25</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="task-block">
+        <p class="task-description">Задача: Создать и добавить элемент с использованием шаблонов: Напишите функцию,
+            которая создает новый элемент с использованием шаблонов (например, с помощью тега template) и добавляет
+            его в DOM.</p>
+        <div class="input-block">
+            <button class="result-btn">Вызвать текст из шаблона</button>
+        </div>
+        <template id="template-example">
+            <div class="my-element">
+                <div class="tempalte-block">
+                    <h3>Какой-то текст из шаблона</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, excepturi. Vel rerum neque sint
+                        quaerat totam ipsum inventore explicabo id quibusdam iste, blanditiis tempora saepe illo
+                        architecto optio aperiam reiciendis.</p>
+                </div>
+            </div>
+        </template>
+        <div class="result-block">
+            <p class="result-paragraph"></p>
+        </div>
+    </div>
+    <script src="./template-task.js"></script>
+</body>
+</html>

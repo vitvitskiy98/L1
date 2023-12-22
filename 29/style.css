@@ -1,0 +1,37 @@
+#popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+
+.task-block,
+.result-block {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 700px;
+    padding-inline: 100px;
+    align-content: center;
+    justify-items: center;
+}
+
+.task-description {
+    text-align: center;
+}
+
+#myForm {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    row-gap: 10px;
+    align-items: center;
+}

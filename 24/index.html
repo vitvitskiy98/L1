@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 24</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="task-block">
+        <p class="task-description">Разработайте страницу, отображающую таблицу с данными.<a
+                href="https://www.filltext.com/?rows=1000&fname=%7BfirstName%7D&lname=%7BlastName%7D&tel=%7Bphone%7Cformat%7D&address=%7BstreetAddress%7D&city=%7Bcity%7D&state=%7BusState%7Cabbr%7D&zip=%7Bzip%7D&pretty=true">Данные
+                необходимо подгружать из этого источника.</a>
+
+            Требования:
+            данные должны загружаться при загрузке страницы
+            необходимо реализовать сортировку по убыванию и по возрастания для всех колонок
+            необходимо реализовать клиентскую пагинацию (50 элементов на странице)
+        </p>
+        <table id="data-table">
+            <thead>
+                <tr>
+                    <th onclick="sortTable(0)">Имя</th>
+                    <th onclick="sortTable(1)">Фамилия</th>
+                    <th onclick="sortTable(2)">Телефон</th>
+                    <th onclick="sortTable(3)">Адрес</th>
+                    <th onclick="sortTable(4)">Город</th>
+                    <th onclick="sortTable(5)">Штат</th>
+                    <th onclick="sortTable(6)">Почтовый индекс</th>
+                </tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+        </table>
+        <div id="pagination"></div>
+    
+        <script src="./table.js"></script>
+</body>
+
+</html>
