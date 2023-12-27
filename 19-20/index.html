@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 19-20</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168" charset="windows-1251"></script>
+</head>
+
+<body>
+    <div class="task-block">
+        <p class="task-description">Реализовать виджет, отображающий список постов из любого паблика в VK (подойдет
+            любой паблик, где постов очень много). Например, с помощью этой функции API VK. Виджет должен иметь
+            фиксированные размеры и возможность прокрутки. При прокрутке содержимого виджета до конца должны
+            подгружаться новые посты. Необходимо реализовать возможность кэширования уже загруженных данных: если
+            пользователь закрыл страницу, а потом снова открыл ее, виджет должен отображать все загруженные ранее данные
+            (новые данные должны подгружаться из учетом уже загруженных ранее).
+
+            При переполнении localStorage, данные, загруженные последними должны вытеснять данные загруженные первыми.
+        </p>
+
+        <div class="container">
+            <div class="widget-container" id="widget-container">
+                <div class="post-list" id="postList"></div>
+            </div>
+
+            <div class="blocks">
+                <div id="vk_groups"></div>
+                <div id="vk_groups-2"></div>
+                <div id="vk_groups-3"></div>
+                <div id="vk_article_-26284064_15959"></div>
+                <div id="vk_podcast"></div>
+            </div>
+            <div class="result-block">
+                <p class="result-paragraph"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./posts-vk-task.js"></script>
+
+    <script type="text/javascript">
+        VK.Widgets.Article("vk_article_-26284064_15959", "@tassagency-mayakovskiy");
+    </script>
+
+    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+    <script type="text/javascript">
+        VK.Widgets.Group("vk_groups", { mode: 4, wide: 1, height: 400, color1: "FFFFFF", color2: "000000", color3: "5181B8" }, 57846937);
+    </script>
+
+    <script type="text/javascript">
+        VK.Widgets.Group("vk_groups-2", { mode: 4, wide: 1, height: 400, width: 600, color1: "FFFFFF", color2: "000000", color3: "5181B8" }, 3183750);
+    </script>
+    <script type="text/javascript">
+        VK.Widgets.Group("vk_groups-3", { mode: 4, wide: 1, height: 400, color1: "FFFFFF", color2: "000000", color3: "5181B8" }, 29534144);
+    </script>
+
+    <script type="text/javascript">
+        VK.Widgets.Podcast('vk_podcast', '-76982440_456239803', '87e3ea29cfd350c30e');
+    </script>
+</body>
+
+</html>
+
+
+
+<!-- https://oauth.vk.com/authorize?client_id=51821506&redirect_uri=https://api.vk.com/blank.html&scope=offline&response_type=token
+
+https://api.vk.com/blank.html#access_token=vk1.a.mOK2EBO4FXaBDpN3QUbzhoFb-qMDTMKZlV74jiMk0F0JUvfedB7eKbFZxfUPl5bLmWNryxafh-mmCzBuA24-tWgNNvgWaNNMFUE-Zj-acWse7NZQzT9GhRR78p1ImnYLVxCCBv1yxARI07uoxF26ohgYhFCx2u5xOJwFMPc6ajhQ6bLoLvNdcJcQGSSu0n4DyzaiunRl0i-VmsLaOhWaMw&expires_in=0&user_id=135027941 -->

@@ -1,0 +1,50 @@
+.widget-container {
+    width: 300px;
+    height: 400px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+}
+
+.post-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.load-more-btn {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #0077b5;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.load-more-btn:hover {
+    background-color: #00548f;
+}
+
+
+.body {
+  margin: 0;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+
+.blocks {
+    display: flex;
+    column-gap: 20px;
+    row-gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+}
